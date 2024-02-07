@@ -1,0 +1,111 @@
+// Body
+$body-bg: #181735;
+
+// Global colors
+$brand-secondary: #262553 !default;
+$brand-primary: #0082ff !default;
+// $brand-primary: #984ffd !default;
+$brand-success: #5be96a !default;
+$brand-warning: #f57969 !default;
+$brand-danger: $brand-primary !default;
+
+$gray-900: #0e1113 !default;
+$gray-800: #24353f !default;
+$gray-700: #495057 !default;
+$gray-600: #6c757d !default;
+$gray-500: #adb5bd !default;
+$gray-400: #ced4da !default;
+$gray-300: #dee2e6 !default;
+$gray-200: #e9ecef !default;
+$gray-100: #fafbfc !default;
+
+$theme-colors: (
+    "primary": $brand-primary,
+    "secondary": $brand-secondary,
+    "success": $brand-success,
+    "warning": $brand-warning,
+    "danger": $brand-danger,
+    "dark": $gray-800,
+    "light": $gray-300,
+    "gray": $gray-500,
+) !default;
+
+// Typography
+$font-family-sans-serif: "Nunito", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+//** Global font style & sizes
+// $font-family-base: "Open Sans", helvetica, arial, sans-serif !default;
+$font-family-header: "Poppins", helvetica, arial, sans-serif !default;
+// $base-font-size: 1rem !default;
+
+// buttons
+$btn-link-hover-color: $brand-primary;
+
+$padding-small: 1.25rem !default; // 20px
+
+//** Headings
+$font-size-h1: 2rem !default;
+$font-size-h2: 1.75rem !default;
+$font-size-h3: 1.5rem !default;
+$font-size-h4: 1.25rem !default;
+$font-size-h5: 1rem !default;
+
+//navbar
+
+$navbar-light-toggler-border-color: rgba($brand-secondary, 0.1);
+$navbar-light-active-color: rgba($brand-secondary, 0.9);
+$navbar-toggler-focus-width: 0px;
+
+// carousel
+$carousel-transition-duration: 0.6s;
+
+//** Global borders
+$border-width: 2px;
+$border-radius-xs: 15px;
+$border-radius-sm: 25px;
+$border-radius: 12px;
+
+// Accordion
+$accordion-button-bg: rgba($brand-secondary, 100);
+$accordion-button-color: rgba($gray-100, 100);
+$accordion-border-color: rgba($gray-300, 0.125);
+$accordion-button-active-bg: rgba($brand-secondary, 100);
+$accordion-button-active-color: rgba($gray-100, 100);
+$accordion-icon-color: rgba($brand-primary, 100);
+$accordion-icon-active-color: rgba($brand-primary, 100);
+
+// Badge
+$badge-padding-y: 0.5rem;
+$badge-padding-x: 0.5rem;
+
+//** Grid
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+) !default;
+
+// Negative margin
+$enable-negative-margins: true;
+
+// Spacer
+$spacer: 1rem !default;
+$spacers: (
+    0: 0,
+    1: $spacer * 0.25,
+    2: $spacer * 0.5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 6,
+    7: $spacer * 8,
+    8: $spacer * 10,
+) !default;
+
+// Collapse
+// $transition-collapse: height ease-out 300ms;

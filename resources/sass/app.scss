@@ -1,0 +1,19 @@
+// Variables
+@import "_variable.scss";
+
+// Fonts
+@import url("https://fonts.bunny.net/css?family=Nunito");
+
+// Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Components
+@import "components/navbar.scss";
+
+// Core
+@import "core/typography";
+
+// Elements
+
+// Layouts
+@import "layouts/app.scss";

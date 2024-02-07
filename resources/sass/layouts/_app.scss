@@ -1,0 +1,32 @@
+.body {
+    height: auto;
+    // min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;
+}
+.bg {
+    background: rgb(54, 30, 118);
+    background: radial-gradient(
+        circle at top left,
+        #562dbd 0%,
+        #2a165b 40%,
+        #190b46 100%
+    );
+
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    position: relative;
+    padding: 1rem;
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        padding: 2rem;
+    }
+}
