@@ -10,7 +10,7 @@
         <div class="page-content-wrapper">
             @include('sections.navbar')
             <div class="container-fluid main-container fade-in">
-                {{-- @yield('content') --}} hello Bas
+                {{-- @yield('content') --}}
             </div>
         </div>
 

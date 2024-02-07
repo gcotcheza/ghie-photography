@@ -9,7 +9,7 @@
                     </button>
                 </div>
                 <a href="{{ url('/') }}" class="navbar-brand me-md-3 text-light fw-bold me-0 mt-2">
-                    <img class="logo" src="" alt="Gamestore logo">
+                    <img class="logo" src="" alt="Ghie-photography logo">
                 </a>
                 <div class="mt-2">
                     <div class="navbar-collapse collapse" id="navbarNav">
