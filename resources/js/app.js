@@ -1,14 +1,22 @@
-// Default Laravel bootstrapper, installs axios
-import './bootstrap';
+// import './bootstrap';
+// import 'bootstrap';
+// import '@popperjs/core';
 
- // Added: Actual Bootstrap JavaScript dependency
-import 'bootstrap';
+import { createApp, h } from 'vue'
+import { createInertiaApp } from '@inertiajs/vue3'
+import  MainLayout  from './Layout/MainLayout.vue'
 
- // Added: Popper.js dependency for popover support in Bootstrap
-import '@popperjs/core';
+createInertiaApp({
+  resolve: name => {
+    const pages = import.meta.glob('./Pages/**/*.vue', { eager: true })
+    const page = pages[`./Pages/${name}.vue`]
+    page.default.layout = page.default.layout || MainLayout
 
-import {createApp} from 'vue'
-
-import home from './components/Home.vue'
-
-createApp(App).mount("#app")
+    return page;
+  },
+  setup({ el, App, props, plugin }) {
+    createApp({ render: () => h(App, props) })
+      .use(plugin)
+      .mount(el)
+  },
+})

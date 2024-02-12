@@ -17,7 +17,15 @@ use App\Http\Controllers\PortfolioController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/about', [AboutMeController::class, 'index'])->name('about');
-Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio');
-Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::get('/', [HomeController::class, 'index']);
+
+Route::get('/about-me', [HomeController::class, 'aboutMe']);
+
+Route::get('/portfolio', [HomeController::class, 'portfolio']);
+
+Route::get('/contact', [HomeController::class, 'contact']);
+
+
+// Route::get('/about', [AboutMeController::class, 'index'])->name('about');
+// Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio');
+// Route::get('/contact', [ContactController::class, 'index'])->name('contact');
